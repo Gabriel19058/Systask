@@ -1,0 +1,12 @@
+.login{
+    height: 100vh;/*o "row" ocupa 100% da tela*/
+    align-items: center !important;/*!important = caso tenha uma regra no bootstrap que não aceita css externo, ele ignora as regras e manda por cima*/
+}
+
+body{
+    margin: 0 0;
+    padding: 0 0;
+    background: url(../img/7073820-mesa-de-madeira-e-borrao-da-beleza-por-do-sol-ceu-e-montanhas-como-fundo-gratis-foto.jpg); /*são dois pontos (..) porque o "login.css" sai da pasta duas vezes*/
+    background-position: center;
+    background-size: cover;
+}
