@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Aula com github</title>
 </head>
+
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -59,22 +61,22 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    if(isset($_REQUEST['data' && 'tarefa' && 'descricao'])){
-                                        $id = 1;
-                                        $data = $_POST['data'];
-                                        $tarefa = $_POST['tarefa'];
-                                        $descricao = $_POST['descricao'];
-                                        $idcerto = $idcerto + $id;
-                                        echo'
+                                if (isset($_REQUEST['data' && 'tarefa' && 'descricao'])) {
+                                    $id = 1;
+                                    $data = $_POST['data'];
+                                    $tarefa = $_POST['tarefa'];
+                                    $descricao = $_POST['descricao'];
+                                    $idcerto = $idcerto + $id;
+                                    echo '
                                             <tr>
-                                                <th scope="row">'.$id.'</th>
-                                                <td>'.$data.'</td>
-                                                <td>'.$tarefa.'</td>
-                                                <td>'.$descricao.'</td>
+                                                <th scope="row">' . $id . '</th>
+                                                <td>' . $data . '</td>
+                                                <td>' . $tarefa . '</td>
+                                                <td>' . $descricao . '</td>
                                                 <td><button class="btn btn-primary btn-block btn-lg" type="submit">Cadastrar</button> </td>
                                             </tr>
                                         ';
-                                    }
+                                }
                                 ?>
                             </tbody>
                         </table>
@@ -84,4 +86,5 @@
         </div>
     </div>
 </body>
+
 </html>
